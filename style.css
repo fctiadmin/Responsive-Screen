@@ -1,0 +1,36 @@
+.container{
+	width:70%;
+	margin:0 auto;
+}
+.container .row{
+	display:grid;
+	grid-template-columns:auto auto;
+	gap:20px;
+}
+.container .row .box{
+	border:1px solid red;
+	padding:25px;
+
+}
+
+/* media query section  */
+/* Responsive section */
+@media(max-width:1200px){
+	.container .row{
+		grid-template-columns:250px auto;
+	}
+	.container .row .box{
+	background:green;
+}
+}
+
+@media(max-width:991px){
+	.container .row{
+		grid-template-columns:auto auto;
+	}
+}
+@media(max-width:600px){
+	.container .row{
+		grid-template-columns:auto;
+	}
+}
